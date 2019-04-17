@@ -1,13 +1,19 @@
-Here is my winning strategy to multi-text classification task:
+Here is **my winning strategy** to carry multi-text classification task
+out.
 
-Text Mining
-===========
+**Data Source** :
+<a href="https://catalog.data.gov/dataset/consumer-complaint-database" class="uri">https://catalog.data.gov/dataset/consumer-complaint-database</a>
+
+1 - Text Mining
+===============
 
 -   **Word Frequency Plot**: Compare frequencies across different texts
     and quantify how similar and different these sets of word
     frequencies are using a correlation test. How correlated are the
     word frequencies between text1 and text2, and between text1 and
     text3?
+
+![](https://github.com/adsieg/Multi_Text_Classification/blob/master/word_frequency.png)
 
 -   **Most discriminant and important word per categories**
 
@@ -33,6 +39,8 @@ connections that occur in the text.
     corpus, in which the frequencies of certain words are inversely
     proportional to their ranks.
 
+![](https://github.com/adsieg/Multi_Text_Classification/blob/master/word_correlations.png)
+
 -   **How to spell variants of a given word**
 
 -   **Chi-Square to see which words are associated to each category**:
@@ -52,10 +60,10 @@ connections that occur in the text.
     documents, *Title Word Count in the Complete Essay* – total number
     of proper case (title) words in the documents
 
-Word Embedding
-==============
+2 - Word Embedding
+==================
 
-### Frequency Based Embedding
+### A - Frequency Based Embedding
 
 -   Count Vector
 -   TF IDF
@@ -63,17 +71,17 @@ Word Embedding
 -   TF-ICF
 -   Function Aware Components
 
-### Prediction Based Embedding
+### B - Prediction Based Embedding
 
 -   CBOW (word2vec)
 -   Skip-Grams (word2vec)
 -   Glove
 -   Topic Model as features // LDA features
 
-Algorithms
-==========
+3 - Algorithms
+==============
 
-### Traditional Methods
+### A - Traditional Methods
 
 -   CountVectorizer + Logistic
 -   CountVectorizer + NB
@@ -91,14 +99,14 @@ Algorithms
 -   Word2Vec + XGBoost
 -   LSA + SVM
 
-### Deep Learning Methods
+### B - Deep Learning Methods
 
 -   GRU + Attention Mechanism
 -   CNN + RNN + Attention Mechanism
 -   CNN + LSTM/GRU + Attention Mechanism
 
-Explainability
-==============
+4 - Explainability
+==================
 
 **Goal**: explain predictions of arbitrary classifiers, including text
 classifiers (when it is hard to get exact mapping between model
@@ -111,8 +119,8 @@ involved)
 
 ![](https://github.com/adsieg/Multi_Text_Classification/blob/master/explainability.gif)
 
-Ressources / Bibliography
-=========================
+5 - Ressources / Bibliography
+=============================
 
 -   **All models** :
     <a href="https://www.analyticsvidhya.com/blog/2018/04/a-comprehensive-guide-to-understand-and-implement-text-classification-in-python/" class="uri">https://www.analyticsvidhya.com/blog/2018/04/a-comprehensive-guide-to-understand-and-implement-text-classification-in-python/</a>
@@ -231,3 +239,6 @@ Ressources / Bibliography
     <a href="http://www.davidsbatista.net/blog/2018/03/31/SentenceClassificationConvNets/" class="uri">http://www.davidsbatista.net/blog/2018/03/31/SentenceClassificationConvNets/</a>
     and
     <a href="https://github.com/davidsbatista/ConvNets-for-sentence-classification/blob/master/Convolutional-Neural-Networks-for-Sentence-Classification.ipynb" class="uri">https://github.com/davidsbatista/ConvNets-for-sentence-classification/blob/master/Convolutional-Neural-Networks-for-Sentence-Classification.ipynb</a>
+
+-   \[Bonus\] Sentiment Analysis in PySpark :
+    <a href="https://github.com/tthustla/setiment_analysis_pyspark/blob/master/Sentiment%20Analysis%20with%20PySpark.ipynb" class="uri">https://github.com/tthustla/setiment_analysis_pyspark/blob/master/Sentiment%20Analysis%20with%20PySpark.ipynb</a>
