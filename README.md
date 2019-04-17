@@ -13,7 +13,7 @@ out.
     word frequencies between text1 and text2, and between text1 and
     text3?
 
-![](https://github.com/adsieg/Multi_Text_Classification/blob/master/word_frequency.png)
+![](https://github.com/adsieg/Multi_Text_Classification/blob/master/pictures/word_frequency.png)
 
 -   **Most discriminant and important word per categories**
 
@@ -39,7 +39,7 @@ connections that occur in the text.
     corpus, in which the frequencies of certain words are inversely
     proportional to their ranks.
 
-![](https://github.com/adsieg/Multi_Text_Classification/blob/master/word_correlations.png)
+![](https://github.com/adsieg/Multi_Text_Classification/blob/master/pictures/word_correlations.png)
 
 -   **How to spell variants of a given word**
 
@@ -117,7 +117,7 @@ involved)
 -   Skate
 -   Shap
 
-![](https://github.com/adsieg/Multi_Text_Classification/blob/master/explainability.gif)
+![](https://github.com/adsieg/Multi_Text_Classification/blob/master/pictures/explainability.gif)
 
 5 - Ressources / Bibliography
 =============================
