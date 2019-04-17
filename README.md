@@ -109,7 +109,7 @@ involved)
 -   Skate
 -   Shap
 
-![](explainability.gif)
+![](https://github.com/adsieg/Multi_Text_Classification/blob/master/explainability.gif)
 
 Ressources / Bibliography
 =========================
