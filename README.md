@@ -1,3 +1,6 @@
+Multi-classes task classification and LDA-based topic Recommender System
+========================================================================
+
 Here is **my winning strategy** to carry multi-text classification task
 out.
 
@@ -76,7 +79,46 @@ connections that occur in the text.
 -   CBOW (word2vec)
 -   Skip-Grams (word2vec)
 -   Glove
+-   At character level -&gt; FastText
 -   Topic Model as features // LDA features
+
+#### LDA
+
+![](https://github.com/adsieg/Multi_Text_Classification/blob/master/pictures/generative_LDA.gif)
+
+![](https://github.com/adsieg/Multi_Text_Classification/blob/master/pictures/pyldavis.png)
+
+![](https://github.com/adsieg/Multi_Text_Classification/blob/master/pictures/tsne_lda.png)
+
+### C - Poincaré Embedding \[Embeddings and Hyperbolic Geometry\]
+
+The main innovation here is that these embeddings are learnt in
+**hyperbolic space**, as opposed to the commonly used **Euclidean
+space**. The reason behind this is that hyperbolic space is more
+suitable for capturing any hierarchical information inherently present
+in the graph. Embedding nodes into a Euclidean space while preserving
+the distance between the nodes usually requires a very high number of
+dimensions.
+
+<a href="https://arxiv.org/pdf/1705.08039.pdf" class="uri">https://arxiv.org/pdf/1705.08039.pdf</a>
+<a href="https://github.com/RaRe-Technologies/gensim/blob/develop/docs/notebooks/Poincare%20Tutorial.ipynb" class="uri">https://github.com/RaRe-Technologies/gensim/blob/develop/docs/notebooks/Poincare%20Tutorial.ipynb</a>
+
+**Learning representations** of symbolic data such as text, graphs and
+multi-relational data has become a central paradigm in machine learning
+and artificial intelligence. For instance, word embeddings such as
+**WORD2VEC**, **GLOVE** and **FASTTEXT** are widely used for tasks
+ranging from machine translation to sentiment analysis.
+
+Typically, the **objective of embedding methods** is to organize
+symbolic objects (e.g., words, entities, concepts) in a way such that
+**their similarity in the embedding space reflects their semantic or
+functional similarity**. For this purpose, the similarity of objects is
+usually measured either by their **distance** or by their **inner
+product** in the embedding space. For instance, Mikolov embed words in
+*R*<sup>*d*</sup> such that their **inner product** is maximized when
+words co-occur within similar contexts in text corpora. This is
+motivated by the **distributional hypothesis**, i.e., that the meaning
+of words can be derived from the contexts in which they appear.
 
 3 - Algorithms
 ==============
@@ -119,7 +161,12 @@ involved)
 
 ![](https://github.com/adsieg/Multi_Text_Classification/blob/master/pictures/explainability.gif)
 
-5 - Ressources / Bibliography
+5 - MyApp of multi-classes text classification with Attention mechanism
+=======================================================================
+
+![](https://github.com/adsieg/Multi_Text_Classification/blob/master/pictures/characters_attention.gif)
+
+6 - Ressources / Bibliography
 =============================
 
 -   **All models** :
@@ -240,5 +287,43 @@ involved)
     and
     <a href="https://github.com/davidsbatista/ConvNets-for-sentence-classification/blob/master/Convolutional-Neural-Networks-for-Sentence-Classification.ipynb" class="uri">https://github.com/davidsbatista/ConvNets-for-sentence-classification/blob/master/Convolutional-Neural-Networks-for-Sentence-Classification.ipynb</a>
 
--   \[Bonus\] Sentiment Analysis in PySpark :
+-   **\[Bonus\] Sentiment Analysis in PySpark** :
     <a href="https://github.com/tthustla/setiment_analysis_pyspark/blob/master/Sentiment%20Analysis%20with%20PySpark.ipynb" class="uri">https://github.com/tthustla/setiment_analysis_pyspark/blob/master/Sentiment%20Analysis%20with%20PySpark.ipynb</a>
+
+-   **RNN Text Generation** :
+    <a href="https://github.com/priya-dwivedi/Deep-Learning/blob/master/RNN_text_generation/RNN_project.ipynb" class="uri">https://github.com/priya-dwivedi/Deep-Learning/blob/master/RNN_text_generation/RNN_project.ipynb</a>
+
+-   **LDA**:
+    <a href="https://github.com/priya-dwivedi/Deep-Learning/blob/master/topic_modeling/LDA_Newsgroup.ipynb" class="uri">https://github.com/priya-dwivedi/Deep-Learning/blob/master/topic_modeling/LDA_Newsgroup.ipynb</a>
+
+-   **Finding similar documents with Word2Vec and Soft Cosine Measure**:
+    <a href="https://github.com/RaRe-Technologies/gensim/blob/develop/docs/notebooks/soft_cosine_tutorial.ipynb" class="uri">https://github.com/RaRe-Technologies/gensim/blob/develop/docs/notebooks/soft_cosine_tutorial.ipynb</a>
+
+-   **\[!! ESSENTIAL !!\] Text Classification with Hierarchical
+    Attention Networks**:
+    <a href="https://humboldt-wi.github.io/blog/research/information_systems_1819/group5_han/" class="uri">https://humboldt-wi.github.io/blog/research/information_systems_1819/group5_han/</a>
+
+-   **\[!! ESSENTIAL !!\] Building a LDA-based Book Recommender
+    System**:
+    <a href="https://humboldt-wi.github.io/blog/research/information_systems_1819/is_lda_final/" class="uri">https://humboldt-wi.github.io/blog/research/information_systems_1819/is_lda_final/</a>
+
+-   **\[ESSENTIAL for any NLP Project\]**:
+    <a href="https://github.com/RaRe-Technologies/gensim/tree/develop/docs/notebooks" class="uri">https://github.com/RaRe-Technologies/gensim/tree/develop/docs/notebooks</a>
+
+-   **Doc2Vec + Logistic Regression** :
+    <a href="https://github.com/susanli2016/NLP-with-Python/blob/master/Doc2Vec%20Consumer%20Complaint_3.ipynb" class="uri">https://github.com/susanli2016/NLP-with-Python/blob/master/Doc2Vec%20Consumer%20Complaint_3.ipynb</a>
+
+-   **Doc2Vec -&gt; just embedding**:
+    <a href="https://github.com/RaRe-Technologies/gensim/blob/develop/docs/notebooks/doc2vec-wikipedia.ipynb" class="uri">https://github.com/RaRe-Technologies/gensim/blob/develop/docs/notebooks/doc2vec-wikipedia.ipynb</a>
+
+-   **New way of embedding -&gt; Poincaré Embeddings**:
+    <a href="https://github.com/RaRe-Technologies/gensim/blob/develop/docs/notebooks/Poincare%20Tutorial.ipynb" class="uri">https://github.com/RaRe-Technologies/gensim/blob/develop/docs/notebooks/Poincare%20Tutorial.ipynb</a>
+
+-   **Doc2Vec + Text similarity**:
+    <a href="https://github.com/RaRe-Technologies/gensim/blob/develop/docs/notebooks/doc2vec-lee.ipynb" class="uri">https://github.com/RaRe-Technologies/gensim/blob/develop/docs/notebooks/doc2vec-lee.ipynb</a>
+
+-   **Graph Link predictions + Part-of-Speech tagging tutorial with the
+    Keras**:
+    <a href="https://github.com/Cdiscount/IT-Blog/tree/master/scripts/link-prediction" class="uri">https://github.com/Cdiscount/IT-Blog/tree/master/scripts/link-prediction</a>
+    &
+    <a href="https://techblog.cdiscount.com/link-prediction-in-large-scale-networks/" class="uri">https://techblog.cdiscount.com/link-prediction-in-large-scale-networks/</a>
