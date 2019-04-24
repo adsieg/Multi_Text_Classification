@@ -84,6 +84,13 @@ connections that occur in the text.
 
 #### LDA
 
+Visualization provides a global view of the topics (and how they differ
+from each other), while at the same time allowing for a deep inspection
+of the terms most highly associated with each individual topic. A novel
+method for choosing which terms to present to a user to aid in the task
+of topic interpretation, in which we define the relevance of a term to a
+topic.
+
 ![](https://github.com/adsieg/Multi_Text_Classification/blob/master/pictures/generative_LDA.gif)
 
 ![](https://github.com/adsieg/Multi_Text_Classification/blob/master/pictures/pyldavis.png)
@@ -293,19 +300,12 @@ involved)
 -   **RNN Text Generation** :
     <a href="https://github.com/priya-dwivedi/Deep-Learning/blob/master/RNN_text_generation/RNN_project.ipynb" class="uri">https://github.com/priya-dwivedi/Deep-Learning/blob/master/RNN_text_generation/RNN_project.ipynb</a>
 
--   **LDA**:
-    <a href="https://github.com/priya-dwivedi/Deep-Learning/blob/master/topic_modeling/LDA_Newsgroup.ipynb" class="uri">https://github.com/priya-dwivedi/Deep-Learning/blob/master/topic_modeling/LDA_Newsgroup.ipynb</a>
-
 -   **Finding similar documents with Word2Vec and Soft Cosine Measure**:
     <a href="https://github.com/RaRe-Technologies/gensim/blob/develop/docs/notebooks/soft_cosine_tutorial.ipynb" class="uri">https://github.com/RaRe-Technologies/gensim/blob/develop/docs/notebooks/soft_cosine_tutorial.ipynb</a>
 
 -   **\[!! ESSENTIAL !!\] Text Classification with Hierarchical
     Attention Networks**:
     <a href="https://humboldt-wi.github.io/blog/research/information_systems_1819/group5_han/" class="uri">https://humboldt-wi.github.io/blog/research/information_systems_1819/group5_han/</a>
-
--   **\[!! ESSENTIAL !!\] Building a LDA-based Book Recommender
-    System**:
-    <a href="https://humboldt-wi.github.io/blog/research/information_systems_1819/is_lda_final/" class="uri">https://humboldt-wi.github.io/blog/research/information_systems_1819/is_lda_final/</a>
 
 -   **\[ESSENTIAL for any NLP Project\]**:
     <a href="https://github.com/RaRe-Technologies/gensim/tree/develop/docs/notebooks" class="uri">https://github.com/RaRe-Technologies/gensim/tree/develop/docs/notebooks</a>
@@ -327,3 +327,56 @@ involved)
     <a href="https://github.com/Cdiscount/IT-Blog/tree/master/scripts/link-prediction" class="uri">https://github.com/Cdiscount/IT-Blog/tree/master/scripts/link-prediction</a>
     &
     <a href="https://techblog.cdiscount.com/link-prediction-in-large-scale-networks/" class="uri">https://techblog.cdiscount.com/link-prediction-in-large-scale-networks/</a>
+
+7. Other Topics - Text Similarity \[Word Mover Distance\]
+=========================================================
+
+-   **Finding similar documents with Word2Vec and WMD** :
+    <a href="https://markroxor.github.io/gensim/static/notebooks/WMD_tutorial.html" class="uri">https://markroxor.github.io/gensim/static/notebooks/WMD_tutorial.html</a>
+
+-   **Introduction to Wasserstein metric (earth mover’s distance)**:
+    <a href="https://yoo2080.wordpress.com/2015/04/09/introduction-to-wasserstein-metric-earth-movers-distance/" class="uri">https://yoo2080.wordpress.com/2015/04/09/introduction-to-wasserstein-metric-earth-movers-distance/</a>
+
+-   **Earthmover Distance**:
+    <a href="https://jeremykun.com/2018/03/05/earthmover-distance/" class="uri">https://jeremykun.com/2018/03/05/earthmover-distance/</a>
+    Problem: Compute distance between points with uncertain locations
+    (given by samples, or differing observations, or clusters). For
+    example, if I have the following three “points” in the plane, as
+    indicated by their colors, which is closer, blue to green, or blue
+    to red?
+
+-   **Word Mover’s distance calculation between word pairs of two
+    documents**:
+    <a href="https://stats.stackexchange.com/questions/303050/word-movers-distance-calculation-between-word-pairs-of-two-documents" class="uri">https://stats.stackexchange.com/questions/303050/word-movers-distance-calculation-between-word-pairs-of-two-documents</a>
+
+-   **Word Mover’s Distance (WMD) for Python**:
+    <a href="https://github.com/stephenhky/PyWMD/blob/master/WordMoverDistanceDemo.ipynb" class="uri">https://github.com/stephenhky/PyWMD/blob/master/WordMoverDistanceDemo.ipynb</a>
+
+-   \[LECTURES\] : **Computational Optimal Transport** :
+    <a href="https://optimaltransport.github.io/pdf/ComputationalOT.pdf" class="uri">https://optimaltransport.github.io/pdf/ComputationalOT.pdf</a>
+
+-   **Computing the Earth Mover’s Distance under Transformations** :
+    <a href="http://robotics.stanford.edu/~scohen/research/emdg/emdg.html" class="uri">http://robotics.stanford.edu/~scohen/research/emdg/emdg.html</a>
+
+-   **\[LECTURES\] Slides WMD**:
+    <a href="http://robotics.stanford.edu/~rubner/slides/sld014.htm" class="uri">http://robotics.stanford.edu/~rubner/slides/sld014.htm</a>
+
+### Others \[Quora Datset\] :
+
+-   **BOW + Xgboost Model** + **Word level TF-IDF + XgBoost** + **N-gram
+    Level TF-IDF + Xgboost** + **Character Level TF-IDF + XGboost**:
+    <a href="https://github.com/susanli2016/Machine-Learning-with-Python/blob/master/Xgboost_bow_tfidf.ipynb" class="uri">https://github.com/susanli2016/Machine-Learning-with-Python/blob/master/Xgboost_bow_tfidf.ipynb</a>
+
+8. Other Topics - Topic Modeling [LDA](#lda)
+============================================
+
+<a href="https://github.com/FelixChop/MediumArticles/blob/master/LDA-BBC.ipynb" class="uri">https://github.com/FelixChop/MediumArticles/blob/master/LDA-BBC.ipynb</a>
+
+<a href="https://github.com/priya-dwivedi/Deep-Learning/blob/master/topic_modeling/LDA_Newsgroup.ipynb" class="uri">https://github.com/priya-dwivedi/Deep-Learning/blob/master/topic_modeling/LDA_Newsgroup.ipynb</a>
+
+-   **TF-IDF + K-means & Latent Dirichlet Allocation (with Bokeh)**:
+    <a href="https://ahmedbesbes.com/how-to-mine-newsfeed-data-and-extract-interactive-insights-in-python.html" class="uri">https://ahmedbesbes.com/how-to-mine-newsfeed-data-and-extract-interactive-insights-in-python.html</a>
+
+-   **\[!! ESSENTIAL !!\] Building a LDA-based Book Recommender
+    System**:
+    <a href="https://humboldt-wi.github.io/blog/research/information_systems_1819/is_lda_final/" class="uri">https://humboldt-wi.github.io/blog/research/information_systems_1819/is_lda_final/</a>
