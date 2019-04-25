@@ -361,14 +361,15 @@ involved)
 -   **\[LECTURES\] Slides WMD**:
     <a href="http://robotics.stanford.edu/~rubner/slides/sld014.htm" class="uri">http://robotics.stanford.edu/~rubner/slides/sld014.htm</a>
 
-### Others \[Quora Datset\] :
+Others \[Quora Datset\] :
+-------------------------
 
 -   **BOW + Xgboost Model** + **Word level TF-IDF + XgBoost** + **N-gram
     Level TF-IDF + Xgboost** + **Character Level TF-IDF + XGboost**:
     <a href="https://github.com/susanli2016/Machine-Learning-with-Python/blob/master/Xgboost_bow_tfidf.ipynb" class="uri">https://github.com/susanli2016/Machine-Learning-with-Python/blob/master/Xgboost_bow_tfidf.ipynb</a>
 
-8. Other Topics - Topic Modeling [LDA](#lda)
-============================================
+8 - Other Topics - Topic Modeling [LDA](#lda)
+=============================================
 
 <a href="https://github.com/FelixChop/MediumArticles/blob/master/LDA-BBC.ipynb" class="uri">https://github.com/FelixChop/MediumArticles/blob/master/LDA-BBC.ipynb</a>
 
